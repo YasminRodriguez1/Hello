@@ -1,0 +1,9 @@
+{
+  "appTitle": {
+    "message": "مرحبا!"
+  },
+  "appDesc": {
+    "message": "هذه نسخة تجريبة.", 
+    "description":"The description of the application, displayed in the web store."
+  }
+}

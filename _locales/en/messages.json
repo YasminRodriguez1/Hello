@@ -1,0 +1,9 @@
+{
+  "appTitle": {
+    "message": "Hello!"
+  },
+  "appDesc": {
+    "message": "This is a demo application.", 
+    "description":"The description of the application."
+  }
+}
