@@ -1,0 +1,10 @@
+{
+  "name": "__MSG_appTitle__",
+  "description": "__MSG_appDesc__",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  }
+}
