@@ -1,13 +1,13 @@
 # Chrome App/Extension Internationalization
 
-Around 70% of Internet users use Chrome today. Chrome is not just for browse ring, It is open, extendable and mobile. It's a great chance for developers to innovate and extend Chrome functionalities using all Chrome platform APIs facilities. The Chrome web store is full of great apps and extensions that could reach million of users and give a service that wasn't possible by other development platforms.
+Around 70% of Internet users use Chrome today. Chrome is not just for browse ring. It is open, extendable and mobile. It's a great chance for developers to innovate and extend Chrome functionalities using all Chrome platform APIs facilities. The Chrome web store is full of great apps and extensions that could reach million of users and give a service that wasn't possible by other development platforms.
 
-This article assumes you already worked with Chrome Apps/Extensions. Understanding how open is Chrome web store to a big variety of people, Internationalizing becomes a must. It makes it easy to adapt to various languages and regions. Chrome provides the developer with a simple structure to internationalize his app/extension in few seconds.
+This article assumes you already worked with Chrome Apps/Extensions. Understanding how open is Chrome web store to a big variety of people, internationalizing becomes a must. It makes it easy to adapt to various languages and regions. Chrome provides the developer with a simple structure to internationalize his/her app/extension in few seconds.
 
 This article will cover Chrome App/Extension i18n using a simple demo.  In order to test your browser in multiple languages, you need to set your [browser locale](https://developer.chrome.com/extensions/i18n#locales-testing).
 
 The source code is available on [GitHub](https://github.com/NuhaKhaled/Hello)
-Ground Work
+Ground Work.
 
 For today's purpose, let's create a simple Chrome extension called Hello (in English). It overrides the new Tab page, to show a Hello message to the user.
 
@@ -58,7 +58,7 @@ The `newtab.html` is the HTML page that overrides Chrome's new tab page. In this
 }
 ```
 
-`newtab.js` sets `h1` with `id="title"` with "Hello" world dynamically on load. Setting the header dynamically would help in changing it easier in future.
+`newtab.js` sets `h1` with `id="title"` with "Hello" world dynamically on load. Setting the header dynamically would help in changing it easier in the future.
 
 ``` js
 function setTitle() {
@@ -74,7 +74,7 @@ That's it, we are done with the ground work. In order to test it, go to `chrome:
 
 ![testarabic](https://cloud.githubusercontent.com/assets/626005/15888811/1b889888-2d71-11e6-90c1-4d4afc06d491.png)
 
-Whatever what was your browser's language, the extension's title, and description will appear as in the same way it was set in the manifest. 
+Whatever your browser's language was, the extension's title and description will appear in the same way as they were set in the manifest. 
 
 ## Internationalizing the Extension
 
@@ -143,7 +143,7 @@ Chrome with English locale:
 
 ![extensions](https://cloud.githubusercontent.com/assets/626005/15888802/1b365fbe-2d71-11e6-8a92-baa1690ccb4b.png)
 
-Now, It is time to change the "Hello" in the new tab. Chrome API provides this JavaScript method to fetch messages with:
+Now, it is time to change the "Hello" in the new tab. Chrome API provides this JavaScript method to fetch messages with:
 
 `chrome.i18n.getMessage('messagename')`
 
@@ -167,7 +167,7 @@ Chrome with Arabic locale:
 
 ![arabic](https://cloud.githubusercontent.com/assets/626005/15888800/1b0c7adc-2d71-11e6-9c2d-07593dff395a.png)
 
-On the last issue, Arabic is right to left language so the exclamation mark should be on the left! chrome API provide you with predefined messages that would help in internationalization. 
+On the last issue, Arabic is right to left language so the exclamation mark should be on the left! Chrome API provides you with predefined messages that will help in internationalization. 
 
 `@@extension_id` The extension or app ID; you might use this string to construct URLs for resources inside the extension. Even unlocalized extensions can use this message. 
 
